@@ -1,0 +1,7 @@
+<h1>Excluir Evento</h1>
+<p>Tem certeza de que deseja excluir "{{ event.title }}"?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+</form>
+<a href="{% url 'event_list' %}">Cancelar</a>
